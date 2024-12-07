@@ -21,3 +21,7 @@ def get_item_handler():
         return jsonify({"status": 404, "message": "Not found"})
     result = select(db_config=current_app.config["DB_CONFIG"], sql=sql)
     return jsonify({"status": 200, "items": result})
+
+
+def my_sum(a, b):
+    return a + b
