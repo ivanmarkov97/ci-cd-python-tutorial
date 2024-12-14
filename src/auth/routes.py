@@ -18,3 +18,7 @@ def auth_session_handler():
         session.permanent = True
         return redirect("/")
     return redirect("/auth/")
+
+
+def my_sum(a, b):
+    return a + b
